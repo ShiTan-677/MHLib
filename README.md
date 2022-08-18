@@ -3,7 +3,7 @@
 
 ## 目前已生成的预约凭证
 #### **建议移动端使用微信打开以下网站**
-- [2022/08/18](https://shitan-677.github.io/MHLib/220818.html "2022年8月18日的预约凭证")
+- [2022/08/19](https://shitan-677.github.io/MHLib/220819.html "2022年8月19日的预约凭证")
 - [2022/08/18](https://shitan-677.github.io/MHLib/220818.html "2022年8月18日的预约凭证")
 - [2022/08/17](https://shitan-677.github.io/MHLib/220817.html "2022年8月17日的预约凭证")
 - [2022/08/16](https://shitan-677.github.io/MHLib/220816.html "2022年8月16日的预约凭证")
