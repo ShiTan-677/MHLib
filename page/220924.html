@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)file:///D:/%E8%87%AA%E5%AA%92%E4%BD%93/%E9%97%B5%E8%A1%8C%E5%9B%BE%E4%B9%A6%E9%A6%86/page/220918.html -->
+<html style="font-size: 100px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>闵行区图书馆</title>
+    <link rel="icon" href="http://mhyy.shuzhoukj.com/WebUI2/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./220924_files/base.css">
+    <link href="./220924_files/dropload.css" rel="stylesheet">
+</head>
+<body style="">
+<div class="header">
+    <a href="http://mhyy.shuzhoukj.com/Act/Index/2006024240600695#">
+        <img class="logo" src="./220924_files/b433dc6a334a4dc191f4a1c382757b3d.png">
+    </a>
+    <a class="h-proof" href="http://mhyy.shuzhoukj.com/Act/Voucher/2006024240600695"></a>
+</div>
+<!-- 活动列表 -->
+<div class="con-box activity-list">
+    <ul><li><a href="http://mhyy.shuzhoukj.com/Act/Show/2208194515600053"><div class="acy-imgbox"><img src="./220924_files/7a1a1668b1b9451596a3cc9ef9f41e96.jpg"><span class="acy-tag">最新发布</span></div><div class="acy-text"><h2 class="single">8月23日闵行区图书馆借还书入场凭证</h2><p class="acyicon1 single">活动地点：上海市闵行区莘庄镇闵行区图书馆闵行春申文化广场</p><p class="acyicon2 single">活动时间：2022年08月23日 09:00 ～ 16:00</p></div></a></li><li><a href="http://mhyy.shuzhoukj.com/Act/Show/2208194512200045"><div class="acy-imgbox"><img src="./220924_files/239e4b31e89c4d03b207767144151f31.jpg"><span class="acy-tag">最新发布</span></div><div class="acy-text"><h2 class="single">8月23日闵行区图书馆入场凭证</h2><p class="acyicon1 single">活动地点：上海市闵行区莘庄镇闵行区图书馆闵行春申文化广场</p><p class="acyicon2 single">活动时间：2022年08月23日 09:00 ～ 16:00</p></div></a></li><li><a href="http://mhyy.shuzhoukj.com/Act/Show/2208194507700037"><div class="acy-imgbox"><img src="./220924_files/7631e296d98e4e89918513b9db588154.jpg"><span class="acy-tag" style="background:#52B220">报名中</span></div><div class="acy-text"><h2 class="single">8月21日闵行区图书馆借还书入场凭证</h2><p class="acyicon1 single">活动地点：上海市闵行区莘庄镇闵行区图书馆闵行春申文化广场</p><p class="acyicon2 single">活动时间：2022年08月21日 09:00 ～ 16:00</p></div></a></li><li><a href="http://mhyy.shuzhoukj.com/Act/Show/2208194502900024"><div class="acy-imgbox"><img src="./220924_files/68e6432b2cc749ab8bff5cccebd4286a.jpg"><span class="acy-tag" style="background:#52B220">报名中</span></div><div class="acy-text"><h2 class="single">8月21日闵行区图书馆入场凭证</h2><p class="acyicon1 single">活动地点：上海市闵行区莘庄镇闵行区图书馆闵行春申文化广场</p><p class="acyicon2 single">活动时间：2022年08月21日 09:00 ～ 16:00</p></div></a></li></ul>
+<div class="dropload-down"><div class="dropload-refresh">↑上拉加载更多</div></div></div>
+<!-- 底部 -->
+<footer class="footer">
+    <a href="javascript:;" class="footer-item active">
+        <i class="icon icon-acy"></i>
+        <span>活动</span>
+    </a>
+    <a href="https://shitan-677.github.io/MHLib/pass/220924.jpg" class="footer-item">
+        <i class="icon icon-ticket"></i>
+        <span>我的凭证</span>
+    </a>
+</footer>
+<!--返回顶部-->
+<div class="btm-tools">
+    <a class="scrollup" href="javascript:void(0);" title="飞回顶部" style="display: block;"></a>
+</div>
+<script src="./220924_files/jquery-1.10.2.min.js.下载" type="text/javascript"></script>
+<script src="./220924_files/base.js.下载" type="text/javascript"></script>
+<script src="./220924_files/dropload.min.js.下载" type="text/javascript"></script>
+<script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 100) {
+            $('.scrollup').css("display", "block");
+        } else {
+            $('.scrollup').css("display","none");
+        }
+    });
+
+    $('.scrollup').click(function() {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 500);
+    });
+
+    
+    function DateMinus(sDate){ 
+        var sdate = new Date(sDate.replace(/-/g, "/")); 
+        var now = new Date(); 
+        var days = now.getTime() - sdate.getTime(); 
+        var day = parseInt(days / (1000 * 60 * 60 * 24)); 
+        return day; 
+    }
+
+    var counter = 0;
+    var num = 10;
+    var loadPage = 0;
+    // dropload
+    $('.activity-list').dropload({
+        scrollArea: window,
+        domDown: {
+            domClass: 'dropload-down',
+            domRefresh: '<div class="dropload-refresh">↑上拉加载更多</div>',
+            domLoad: '<div class="dropload-load"><span class="loading"></span>加载中请稍等</div>',
+            domNoData: '<div class="dropload-noData">--没有更多活动--</div>'
+        },
+        loadDownFn: function(me) {
+            var result = "";
+            counter++;
+            loadPage = num * counter;
+            $.post("/Act/SearchAct",
+                {
+                    sidx: "Order desc,Id desc",
+                    page: counter,
+                    rows: num,
+                    WxActSiteId: "2006024240600695"
+                },
+                function(res) {
+                    if (res.flag) {
+                        $(res.data.rows).each(function(index) {
+                            const id = $(this).attr("Id");
+                            const name = $(this).attr("Name");
+                            const iconUrl = $(this).attr("IconUrl") ? $(this).attr("IconUrl").replace("Default","900_600") :"/WebUI2/images/default.jpg";
+                            const actTime = $(this).attr("ActTime");
+                            const address = $(this).attr("Address");
+                            const audience = $(this).attr("Audience");
+                            var isOpen = $(this).attr("IsOpen");
+                            var tip = ""; 
+                            if (isOpen) {
+                                var actStartTime = $(this).attr("ActStartTime");
+                                var actEndTime = $(this).attr("ActEndTime");
+                                var startTime = $(this).attr("StartTime");
+                                var endTime = $(this).attr("EndTime");
+                                var isSetTime = $(this).attr("IsSetTime");
+                                var createDateTime = $(this).attr("CreateDateTime");//发布时间
+                                createDateTime = getDateTime(ConvertJSONDateToJSDateObject(createDateTime));
+                                actStartTime = getDateTime(ConvertJSONDateToJSDateObject(actStartTime));
+                                actEndTime = getDateTime(ConvertJSONDateToJSDateObject(actEndTime));
+                                startTime = getDateTime(ConvertJSONDateToJSDateObject(startTime));
+                                endTime = getDateTime(ConvertJSONDateToJSDateObject(endTime));
+                                var createDate = new Date(Date.parse(createDateTime));
+                                var actStart = new Date(Date.parse(actStartTime));
+                                var actEnd = new Date(Date.parse(actEndTime));
+                                var start = new Date(Date.parse(startTime));
+                                var end = new Date(Date.parse(endTime));
+                                var nowTime = new Date();
+                                var day = DateMinus(createDateTime);
+                              
+                                if ((isSetTime && nowTime >= start && nowTime <= end) || (!isSetTime && nowTime < actStart)) {
+                                    tip = '<span class="acy-tag" style="background:#52B220">报名中</span>';
+                                }
+                                else if (day <= 3 && actStart > nowTime) {
+                                    tip = '<span class="acy-tag">最新发布</span>';
+                                }
+                                else if (day > 3 && isSetTime && nowTime > end && actStart > nowTime) {
+                                    tip = '<span class="acy-tag" style="background:#FFCE45" >即将开始</span>';
+                                }
+                                else if (nowTime >= actStart && nowTime <= actEnd) {
+                                    tip = '<span class="acy-tag" style="background:#01D867">进行中</span>';
+                                }
+                                else if (nowTime > actEnd) {
+                                    tip = '<span class="acy-tag" style="background:#cacaca">已结束</span>';
+                                }
+                            }
+                            var showUrl = "/Act/Show/" + id;
+                            result += `<li><a href="${showUrl}"><div class="acy-imgbox"><img src="${iconUrl}">${tip}</div><div class="acy-text"><h2 class="single">${
+                                name}</h2>`;
+                            if (address) {
+                                result += `<p class="acyicon1 single">活动地点：${address}</p>`;
+                            }
+                            result += `<p class="acyicon2 single">活动时间：${actTime}</p>`;
+                          
+                            if (audience) {
+                                result += `<p class="acyicon3 single">受众群体：${audience}</p>`;
+                            }
+                            result += '</div></a></li>';
+
+                        });
+                        if (loadPage >= res.data.records) {
+                            // 锁定
+                            me.lock();
+                            // 无数据
+                            me.noData();
+                        }
+                        $(".activity-list>ul").append(result);
+                    }
+                    me.resetload();
+                }).error(function() {
+                me.resetload();
+            });
+        },
+        threshold: 500
+    });
+</script>
+
+
+</body></html>
