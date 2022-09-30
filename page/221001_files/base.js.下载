@@ -1,0 +1,43 @@
+(function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if (clientWidth >= 750) {
+                docEl.style.fontSize = '100px';
+            } else {
+                docEl.style.fontSize = 150 * (clientWidth / 750) + 'px';
+            }
+        };
+
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+
+
+function ConvertJSONDateToJSDateObject(jsondate) {
+    var date = new Date(parseInt(jsondate.replace("/Date(", "").replace(")/", ""), 10));
+    return date;
+}
+
+/* 获取日期格式 */
+function getDate(date) {
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    return year + "-" + month + "-" + day;
+}
+
+
+/* 获取日期时间格式*/
+function getDateTime(date) {
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+    var hh = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+    var mm = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+    var ss = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+    return year + "-" + month + "-" + day + " " + hh + ":" + mm + ":" + ss;
+}
